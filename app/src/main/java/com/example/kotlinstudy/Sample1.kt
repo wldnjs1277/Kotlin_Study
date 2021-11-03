@@ -9,7 +9,7 @@ fun main(){
     val lastname = "Lee"
     println("my name is ${name +" "+lastname}")
     println("this is 2\$")*/
-    forandwhile()
+    ignoreNull("wldnjs1277")
 }
 //함수
 
@@ -96,5 +96,34 @@ fun forandwhile(){
     while(index <10){
         println("current Index : ${index}")
         index++
+    }
+}
+
+// Nullable/ NonNull
+
+fun nullcheck(){
+    var name:String = "jiwon"
+
+    var nullName : String? = null
+
+    var nameInUpperCase : String = name.toUpperCase()
+
+    var nullNameInUpperCase : String? = nullName?.toUpperCase()
+
+    // ?:
+
+    val lastName : String? = null
+    val fullName = name +" "+(lastName?: "NO LAST NAME")
+    println(fullName)
+
+    //!!
+}
+fun ignoreNull(str:String?){
+    val notNull : String = str!!
+    val upper = notNull.toUpperCase()
+
+    val email : String = "wldnjs1277@naver.com"
+    email.let {
+        println("my email is ${email}")
     }
 }

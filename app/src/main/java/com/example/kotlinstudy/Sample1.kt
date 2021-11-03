@@ -82,6 +82,10 @@ fun forandwhile(){
         println("name : ${name}")
     }
 
+    for((index:Int,name:String) in students.withIndex()){
+        println("${index+1}번째 학생 : ${name}이다")
+    }
+
     var sum : Int = 0
     for(i:Int in 1..10){
         sum += i

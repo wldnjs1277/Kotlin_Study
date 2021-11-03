@@ -9,7 +9,7 @@ fun main(){
     val lastname = "Lee"
     println("my name is ${name +" "+lastname}")
     println("this is 2\$")*/
-    checknumber(1)
+    forandwhile()
 }
 //함수
 
@@ -73,4 +73,12 @@ fun array(){
     val arraylist : ArrayList<Int> = arrayListOf<Int>()
     arraylist.add(10)
     arraylist.add(20)
+}
+// for / while
+fun forandwhile(){
+    val students : ArrayList<String> = arrayListOf("a","b","c","d")
+
+    for(name:String in students){
+        println("name : ${name}")
+    }
 }

@@ -87,4 +87,10 @@ fun forandwhile(){
         sum += i
     }
     println(sum)
+
+    var index = 0
+    while(index <10){
+        println("current Index : ${index}")
+        index++
+    }
 }

@@ -81,4 +81,10 @@ fun forandwhile(){
     for(name:String in students){
         println("name : ${name}")
     }
+
+    var sum : Int = 0
+    for(i:Int in 1..10){
+        sum += i
+    }
+    println(sum)
 }

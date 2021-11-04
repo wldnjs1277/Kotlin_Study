@@ -21,6 +21,7 @@ package com.example.kotlinstudy
 
 class Korean : Human(){
     override fun singasong(){
+        super.singasong()
         println("하하하")
     }
 

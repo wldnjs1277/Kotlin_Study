@@ -1,7 +1,7 @@
 package com.example.kotlinstudy
 
 
-class Human constructor(val name : String = "anonymous"){
+class Human(val name : String = "anonymous"){
 
     constructor(name: String , age:Int) : this(name){
         println("my name is ${name}, ${age}years old")
@@ -15,7 +15,6 @@ class Human constructor(val name : String = "anonymous"){
         println("this is so yummy!!")
     }
 }
-
 
 
 fun main(){

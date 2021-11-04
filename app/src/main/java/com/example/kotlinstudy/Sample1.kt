@@ -10,6 +10,7 @@ fun main(){
     println("my name is ${name +" "+lastname}")
     println("this is 2\$")*/
     ignoreNull("wldnjs1277")
+
 }
 //함수
 

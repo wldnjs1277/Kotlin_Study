@@ -1,7 +1,7 @@
 package com.example.kotlinstudy
 
 
-class Human(val name : String = "anonymous"){
+ open class Human(val name : String = "anonymous"){
 
     constructor(name: String , age:Int) : this(name){
         println("my name is ${name}, ${age}years old")
@@ -14,8 +14,17 @@ class Human(val name : String = "anonymous"){
     fun eatingcake(){
         println("this is so yummy!!")
     }
+    open fun singasong(){
+         println("hahaha")
+     }
 }
 
+class Korean : Human(){
+    override fun singasong(){
+        println("하하하")
+    }
+
+}
 
 fun main(){
     //val human = Human(name = "jiwon")
@@ -25,4 +34,6 @@ fun main(){
     //println("human name = ${stranger.name}")
 
     val human2 = Human(name = "jiwon2", age = 26)
+    val korean = Korean()
+    korean.singasong()
 }

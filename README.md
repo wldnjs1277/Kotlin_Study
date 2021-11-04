@@ -14,7 +14,10 @@ Kotlin Study
 ##### array & list 2
 ##### NonNull/ Nullable
 ##### 엘비스 연산자
-##### let이 무엇인지
 
 
 ### 3일차 학습내용 간단요약
+
+##### Class 개념 & 상속
+##### - init 
+##### - overriding

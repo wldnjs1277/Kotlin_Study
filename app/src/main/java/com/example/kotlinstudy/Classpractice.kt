@@ -1,9 +1,16 @@
 package com.example.kotlinstudy
 
 
-class Human{
+class Human constructor(val name : String = "anonymous"){
 
-    val name = "jiwon"
+    constructor(name: String , age:Int) : this(name){
+        println("my name is ${name}, ${age}years old")
+    }
+
+    init{
+        println("---new Human has been born---")
+    }
+    //val name = "jiwon"
     fun eatingcake(){
         println("this is so yummy!!")
     }
@@ -12,7 +19,11 @@ class Human{
 
 
 fun main(){
-    val human = Human()
-    human.eatingcake()
-    println("human name = ${human.name}")
+    //val human = Human(name = "jiwon")
+    //val human = Human()
+    //human.eatingcake()
+    //val stranger = Human()
+    //println("human name = ${stranger.name}")
+
+    val human2 = Human(name = "jiwon2", age = 26)
 }

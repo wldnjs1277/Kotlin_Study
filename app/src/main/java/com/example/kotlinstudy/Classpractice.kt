@@ -2,6 +2,8 @@ package com.example.kotlinstudy
 
 
 class Human{
+
+    val name = "jiwon"
     fun eatingcake(){
         println("this is so yummy!!")
     }
@@ -12,4 +14,5 @@ class Human{
 fun main(){
     val human = Human()
     human.eatingcake()
+    println("human name = ${human.name}")
 }

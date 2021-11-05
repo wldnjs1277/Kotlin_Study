@@ -13,6 +13,7 @@ fun main(){
     val b = "you said "
     println(a.pizzaIsGreat())
     println(b.pizzaIsGreat())
+    println(extendString(name = "jiwon", age = 26))
 
 }
 
@@ -20,4 +21,9 @@ fun main(){
 
 val pizzaIsGreat : String.() -> String = {
     this + "Pizza is the best !"
+}
+
+fun extendString(name : String, age : Int) : String{
+    val introduceMyself : String.(Int) -> String = {"I am ${this} and ${it} years old"}
+    return name.introduceMyself(age)
 }

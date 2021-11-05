@@ -25,4 +25,4 @@ Kotlin Study
 
 ### 4일차 학습내용 간단요약
 
-##### amda식
+##### Lamda식

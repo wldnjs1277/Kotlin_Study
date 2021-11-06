@@ -11,6 +11,8 @@ fun main(){
     println(square1(12))
     println(mynameAge("jiwon",26))
     println(pizza("taste good "))
+    val a = "jiwon said "
+    println(a.pizza()+" taste good")
 }
 
 ////////////

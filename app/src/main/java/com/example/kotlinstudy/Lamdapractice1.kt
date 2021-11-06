@@ -1,7 +1,10 @@
 package com.example.kotlinstudy
 
+//자료형 표현식
 
-val square1 = {number : Int -> number*number}
+//val square1 = {number : Int -> number*number}
+val square1 : (Int) -> (Int) = {number -> number*number}
+//val square1 : (Int) -> (Int) = {number:Int -> number*number}
 
 val mynameAge = {name:String,age:Int -> "My name is ${name}, ${age} years old"}
 

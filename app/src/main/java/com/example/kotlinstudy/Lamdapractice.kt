@@ -1,8 +1,8 @@
 package com.example.kotlinstudy
 
 
-//val square : (Int) -> (Int) = {number -> number*number}
-val square  = {number : Int -> number*number}
+val square : (Int) -> (Int) = {number -> number*number}
+//val square2 = {number : Int -> number*number}
 val nameAge = {name : String, age : Int -> "my name is ${name} I'm ${age}"}
 
 fun main(){
@@ -40,7 +40,7 @@ fun extendString(name : String, age : Int) : String {
 
 //.람다의 Return
 
-val calculationGrade : (Int) -> String = {
+val calculationGrade: (Int) -> String = {
     when(it){
         in 0..40 -> "fail"
         in 41..70 -> "pass"

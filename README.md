@@ -21,3 +21,8 @@ Kotlin Study
 ##### Class 개념 & 상속
 ##### - init 
 ##### - overriding
+
+
+### 4일차 학습내용 간단요약
+
+##### Lamda식

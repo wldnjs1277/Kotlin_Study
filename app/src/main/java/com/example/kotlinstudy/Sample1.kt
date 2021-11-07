@@ -1,5 +1,8 @@
 package com.example.kotlinstudy
 
+import java.util.*
+import kotlin.collections.ArrayList
+
 //빨강색 : 컨트롤+알트+A 를 눌러서 등록해줘야함.
 //초록색 : commit 할 준비가 되었음.
 //파란색 : 기존에 있던 파일이 수정되었음.
@@ -121,8 +124,8 @@ fun nullcheck(){
 }
 fun ignoreNull(str:String?){
     val notNull : String = str!!
-    val upper = notNull.toUpperCase()
-
+    val upper = notNull.uppercase(Locale.getDefault())
+    //자료형 변수명
     val email : String = "wldnjs1277@naver.com"
     email.let {
         println("my email is ${email}")

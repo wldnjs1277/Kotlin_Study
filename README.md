@@ -37,6 +37,11 @@ Kotlin Study
 
 ### 7일차 학습내용 간단요약
 
+##### layout
+##### -LinearLayout(verticla)
+##### -FrameLayout
+##### -TableLayout
+
 ### 8일차 학습내용 간단요약
 
 ### 9일차 학습내용 간단요약

@@ -9,6 +9,8 @@ fun main(){
 
     val ticketB = Ticketnormal("koreanAir", "jiwon", "20201-11-8", 13)
 
+    var a : Int = 5
+    println(a.toString())
     println(ticketA)
     println(ticketB)
 }

@@ -2,7 +2,8 @@ package com.example.kotlinstudy
 
 fun main(){
     val book = Book.create()
-    println("${book.id} ${book.name}")
+    val bookId = Book.Bookfactory.getId()
+    println("${book.id} ${book.name} ${bookId}")
 }
 
 class Book private constructor(val id : Int, val name:String){

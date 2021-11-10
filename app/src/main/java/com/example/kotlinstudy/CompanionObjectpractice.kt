@@ -7,9 +7,15 @@ fun main(){
 
 class Book private constructor(val id : Int, val name:String){
 
-    companion object {
+    companion object Bookfactory : IdProvider {
+        override fun getId() : Int {
+            return 444
+        }
         val myBook = "new book"
-        fun create()=Book(0, myBook)
+        fun create()=Book(getId(), myBook)
     }
 
+}
+interface IdProvider{
+    fun getId() : Int
 }

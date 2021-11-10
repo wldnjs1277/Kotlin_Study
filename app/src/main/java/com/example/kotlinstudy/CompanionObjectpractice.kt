@@ -32,6 +32,6 @@ class Introduce private constructor(val name: String,val age:Int){
         fun myself()=Introduce(myname, getAge())
     }
 }
- interface ageProvider{
-     fun getAge():Int
+interface ageProvider{
+    fun getAge():Int
 }

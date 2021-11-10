@@ -4,6 +4,9 @@ fun main(){
     val book = Book.create()
     val bookId = Book.Bookfactory.getId()
     println("${book.id} ${book.name} ${bookId}")
+
+    val introduce = Introduce.myself()
+    println("myname = ${introduce.name} , my age = ${introduce.age}")
 }
 
 class Book private constructor(val id : Int, val name:String){
@@ -18,4 +21,17 @@ class Book private constructor(val id : Int, val name:String){
 }
 interface IdProvider{
     fun getId() : Int
+}
+
+class Introduce private constructor(val name: String,val age:Int){
+    companion object : ageProvider{
+        override fun getAge() : Int{
+            return 26
+        }
+        val myname = "jiwon"
+        fun myself()=Introduce(myname, getAge())
+    }
+}
+ interface ageProvider{
+     fun getAge():Int
 }

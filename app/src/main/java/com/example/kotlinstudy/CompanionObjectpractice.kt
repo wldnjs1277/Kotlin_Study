@@ -15,7 +15,6 @@ class Book private constructor(val id : Int, val name:String){
         val myBook = "new book"
         fun create()=Book(getId(), myBook)
     }
-
 }
 interface IdProvider{
     fun getId() : Int

@@ -9,7 +9,7 @@ fun main(){
     println(CarFactory.cars.size.toString())
 }
 
-object  CarFactory {
+object CarFactory {
     val cars = mutableListOf<Car>()
     fun makeCar(horsePower: Int) : Car{
         val car = Car(horsePower)

@@ -49,3 +49,7 @@ Kotlin Study
 ### 9일차 학습내용 간단요약
 
 ##### companion object
+
+### 10일차 학습내용 간단요약
+
+##### object

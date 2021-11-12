@@ -1,12 +1,15 @@
 package com.example.kotlinstudy
+//lamda/ companionobject
 
 fun main(){
-    println(divison(10,2))
+    println(calculator(10,2))
 
 }
 
 //lamda
 
-val divison = {number1:Int,number2:Int -> number1/number2}
+val calculator = {number1:Int,number2:Int -> number1/number2}
+
+
 
 //companionobject

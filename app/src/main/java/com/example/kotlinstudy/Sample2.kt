@@ -9,6 +9,14 @@ fun main(){
     println(jiwonfood.burger())
 
     println(mymy("jiwon",26, "2021-11-13"))
+    ////////////////////////////////
+
+    val my = My.create()
+
+    println("${my.age},${my.date},${my.name}")
+
+    val myname = My.getname()
+    println("my name is $myname")
 }
 
 //lamda
@@ -24,9 +32,23 @@ fun mymy(name:String,age:Int,date:String) : String {
         "my name ${this} age = ${age} today = ${date}"
     }
     return name.introduce(age,date)
+    /*val introduce:String.(Int)->String={"my name ${this} age=${it}"}
+    return name.introduce(age)*/
 }
-
-
-
 //companionobject
 
+class My private constructor(val name: String,val age: Int,val date: String){
+
+    companion object MyFactory : nameprovider{
+        override fun getname(): String {
+            return "jiwon"
+        }
+        var myage = 26
+        var today = "2021-11-13"
+        fun create()= My(getname(), myage,today)
+    }
+}
+
+interface nameprovider{
+    fun getname():String
+}

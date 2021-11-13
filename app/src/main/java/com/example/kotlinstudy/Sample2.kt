@@ -28,9 +28,8 @@ val burger : String.() -> String = {
 }
 
 fun mymy(name:String,age:Int,date:String) : String {
-    val introduce:String.(Int,String) -> String = {age:Int,date:String ->
-        "my name ${this} age = ${age} today = ${date}"
-    }
+    val introduce:String.(Int,String) -> String =
+        { age: Int, date: String -> "my name ${this} age = ${age} today = ${date}" }
     return name.introduce(age,date)
     /*val introduce:String.(Int)->String={"my name ${this} age=${it}"}
     return name.introduce(age)*/

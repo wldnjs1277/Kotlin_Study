@@ -15,7 +15,7 @@ fun main(){
 
     println("${my.age},${my.date},${my.name}")
 
-    val myname = My.GetName()
+    val myname = My.getname()
     println("my name is $myname")
 }
 
@@ -39,15 +39,15 @@ fun mymy(name:String,age:Int,date:String) : String {
 class My private constructor(val name: String,val age: Int,val date: String){
 
     companion object MyFactory : NameProvider{
-        override fun GetName(): String {
+        override fun getname(): String {
             return "jiwon"
         }
         var myage = 26
         var today = "2021-11-13"
-        fun create()= My(GetName(), myage,today)
+        fun create()= My(getname(), myage,today)
     }
 }
 
 interface NameProvider{
-    fun GetName():String
+    fun getname():String
 }

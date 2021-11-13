@@ -57,3 +57,7 @@ Kotlin Study
 ### 11일차 학습내용 간단요약
 
 ##### singleton pattern 알아보기 
+
+### 12일차 학습내용 간단요약
+
+##### lamda/companion object 다시보기 

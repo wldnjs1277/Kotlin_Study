@@ -15,7 +15,7 @@ fun main(){
 
     println("${my.age},${my.date},${my.name}")
 
-    val myname = My.getname()
+    val myname = My.GetName()
     println("my name is $myname")
 }
 
@@ -34,20 +34,20 @@ fun mymy(name:String,age:Int,date:String) : String {
     /*val introduce:String.(Int)->String={"my name ${this} age=${it}"}
     return name.introduce(age)*/
 }
-//companionobject
+//companion object
 
 class My private constructor(val name: String,val age: Int,val date: String){
 
-    companion object MyFactory : nameprovider{
-        override fun getname(): String {
+    companion object MyFactory : NameProvider{
+        override fun GetName(): String {
             return "jiwon"
         }
         var myage = 26
         var today = "2021-11-13"
-        fun create()= My(getname(), myage,today)
+        fun create()= My(GetName(), myage,today)
     }
 }
 
-interface nameprovider{
-    fun getname():String
+interface NameProvider{
+    fun GetName():String
 }
